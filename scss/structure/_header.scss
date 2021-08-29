@@ -1,0 +1,26 @@
+/*HEADER*/
+header {
+  font-family: "Bebas Neue", cursive;
+}
+.navbar-toggler-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: red;
+}
+
+.header_div {
+  &_log {
+    width: 15rem;
+    height: 14rem;
+  }
+  &_a {
+    color: rgb(255, 255, 255) !important;
+    font-size: 2.5rem;
+  }
+  &_a:hover {
+    color: rgb(32, 206, 206) !important;
+  }
+}

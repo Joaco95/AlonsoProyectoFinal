@@ -1,0 +1,45 @@
+/*****TURNOS*****/
+
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+.main_form_primary {
+  font-family: "Rampart One", cursive;
+  display: inline;
+  font-size: 12rem;
+  text-transform: uppercase;
+  color: $color_title_turnos;
+}
+
+.main_form {
+  &_title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  &_area {
+    font-size: 1.5rem;
+    background-color: #74ebd5;
+    background-image: radial-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  }
+  &_botton {
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: $color-botton;
+    border-color: $color-botton;
+    &_area {
+      font-size: 2rem;
+      font-weight: 400;
+      background-color: $color-botton;
+      border-color: $color-botton;
+    }
+  }
+}
+.form-control {
+  font-size: 2rem;
+  font-weight: 300;
+  height: 5rem;
+}
+.form-select {
+  font-size: 2rem;
+  font-weight: 300;
+  height: 5rem;
+}

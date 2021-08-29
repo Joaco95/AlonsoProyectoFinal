@@ -1,0 +1,36 @@
+/*****MUSIC SESSIONS*****/
+.main_div {
+  &_h1 {
+    font-size: 12rem;
+    text-shadow: 4px 4px 0px #3f7fbf;
+    animation: fadeIn 2.5s linear forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+.main_section_ms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_ms_card {
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1.5rem solid rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  width: 80rem;
+}
+
+.card-title {
+  font-weight: 600 !important;
+}

@@ -1,0 +1,433 @@
+@charset "UTF-8";
+/****GENERAL****/
+/***Variables****/
+/****Operaciones*****/
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+.main_section_index_title_h1 {
+  border: solid 0.2rem rgba(129, 236, 236, 0.822);
+}
+
+/****GENERAL****/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+/*STRUCTURE */
+/*HEADER*/
+header {
+  font-family: "Bebas Neue", cursive;
+}
+
+.navbar-toggler-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: red;
+}
+
+.header_div_log {
+  width: 15rem;
+  height: 14rem;
+}
+
+.header_div_a {
+  color: white !important;
+  font-size: 2.5rem;
+}
+
+.header_div_a:hover {
+  color: #20cece !important;
+}
+
+/****MENU****/
+main {
+  font-family: "Oswald", sans-serif;
+}
+
+/****FOOTER****/
+.footer_div {
+  font-family: "Bebas Neue", cursive;
+  overflow: hidden;
+  margin-top: 2rem;
+  background: #262626;
+}
+
+.footer_div_logos {
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer_div_title {
+  color: #fcfcfce5 !important;
+  font-size: 5rem;
+}
+
+.footer_div_small {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff !important;
+}
+
+/*TABS*/
+/*****Home******/
+.main_section_index_title_h1 {
+  position: relative;
+  color: #7d41e6;
+  font-size: 12rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}
+
+.main_section_index_title_h1::before {
+  content: "INFORMACIÓN";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #fe05e1 4px, #fe05e1 8px);
+  -webkit-background-clip: text;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main_section_index_title_h1::after {
+  content: "INFORMACIÓN";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #fe05e1 4px, #fe05e1 8px);
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main_section_index_title_h1:hover:before {
+  top: 0.8rem;
+  left: 0.8rem;
+}
+
+.main_section_index_title_h1:hover:after {
+  top: -0.8rem;
+  left: -0.8rem;
+}
+
+.main_section_p {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+
+/*****MUSIC SESSIONS*****/
+.main_div_h1 {
+  font-size: 12rem;
+  text-shadow: 4px 4px 0px #3f7fbf;
+  -webkit-animation: fadeIn 2.5s linear forwards;
+          animation: fadeIn 2.5s linear forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main_section_ms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_ms_card {
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1.5rem solid rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  width: 80rem;
+}
+
+.card-title {
+  font-weight: 600 !important;
+}
+
+/*****STUDIO*****/
+.main_div_st_title {
+  font-family: "Lobster", cursive;
+  color: #80d0c7;
+  position: relative;
+  font-size: 12rem;
+  letter-spacing: 0.1em;
+  -webkit-transition: 3s;
+  transition: 3s;
+  text-shadow: 1px 1px 0 #08aeea, 1px 2px 0 #08aeea, 1px 3px 0 #08aeea, 1px 4px 0 #08aeea, 1px 5px 0 #08aeea, 1px 6px 0 #08aeea, 1px 7px 0 #08aeea, 1px 8px 0 #08aeea, 5px 13px 15px black;
+}
+
+.main_div_st_title:hover {
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transform: scale(1.1) translate(0%, 30%);
+          transform: scale(1.1) translate(0%, 30%);
+  text-shadow: 1px -1px 0 #08aeea, 1px -2px 0 #08aeea, 1px -3px 0 #08aeea 1px -4px 0 #08aeea, 1px -5px 0 #08aeea, 1px -6px 0 #08aeea, 1px -7px 0 #08aeea, 1px -8px 0 #08aeea, 5px -13px 15px black, 5px -13px 25px #0a87b5;
+}
+
+.main_section1_title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 3rem;
+}
+
+.main_section1_img {
+  width: 100%;
+  height: 100%;
+  border: solid 1rem #8bc6ec;
+  border-radius: 5rem;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.main_section1_div:hover .main_section1_img {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.main_section2 {
+  border: solid 1rem #8bc6ec;
+  border-radius: 3rem;
+  margin: 2rem;
+}
+
+.main_section2_img {
+  width: 100%;
+  height: 100%;
+}
+
+.main_section3 {
+  border: solid 1rem #8bc6ec;
+  border-radius: 3rem;
+  margin: 2rem;
+}
+
+.main_section3_img {
+  width: 100%;
+  height: 100%;
+}
+
+.main_section_st_p {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+/****Proyectos*****/
+.main_proyect_title {
+  position: relative;
+  text-transform: lowercase;
+  text-shadow: -3.5rem 3.5rem 1rem #6284ff;
+  color: #b3adad;
+  letter-spacing: 1.5rem;
+  font-family: "Bungee Shade", cursive;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 12rem;
+  -webkit-transition: all 3s ease-out;
+  transition: all 3s ease-out;
+}
+
+.main_proyect_title:hover {
+  text-shadow: -0.5rem 0.5rem 1rem #ff0000;
+  color: black;
+}
+
+/*****TURNOS*****/
+.main_form_primary {
+  font-family: "Rampart One", cursive;
+  display: inline;
+  font-size: 12rem;
+  text-transform: uppercase;
+  color: #4e3edd;
+}
+
+.main_form_title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.main_form_area {
+  font-size: 1.5rem;
+  background-color: #74ebd5;
+  background-image: radial-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+.main_form_botton {
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #784ba0;
+  border-color: #784ba0;
+}
+
+.main_form_botton_area {
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #784ba0;
+  border-color: #784ba0;
+}
+
+.form-control {
+  font-size: 2rem;
+  font-weight: 300;
+  height: 5rem;
+}
+
+.form-select {
+  font-size: 2rem;
+  font-weight: 300;
+  height: 5rem;
+}
+
+/*MEDIAQUERIS*/
+/****MEDIA QUERIES****/
+/**STRUCTURE**/
+@media (max-width: 576px) {
+  .header_div_log {
+    width: 10rem;
+    height: 9rem;
+  }
+  .footer_div_title {
+    font-size: 4rem;
+  }
+  .footer_div_logos {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/*INDEX*/
+@media (max-width: 576px) {
+  .main_section_index_title_h1 {
+    font-size: 8rem !important;
+  }
+  .main_section_index_title_h1 {
+    border: solid 0.5rem red;
+  }
+  .main_section_p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_section_index_title_h1 {
+    font-size: 6rem;
+  }
+}
+
+/*MUSICSESSIONS*/
+@media (max-width: 576px) {
+  .main_div_h1 {
+    font-size: 4rem;
+  }
+  .main_ms_card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_ms_card {
+    width: 100%;
+  }
+}
+
+/*STUIDO*/
+@media (max-width: 576px) {
+  .main_div_st_title {
+    font-size: 6rem;
+  }
+  .main_section1_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .main_section1_div:hover .main_section1_img {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .main_section_st_p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_section1_div:hover .main_section1_img {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+}
+
+/*SHIFTS*/
+@media (max-width: 576px) {
+  .main_form_primary {
+    font-size: 6rem;
+  }
+}
+
+/*PROYECTS*/
+@media (max-width: 576px) {
+  .main_proyect_title {
+    font-size: 4rem !important;
+    letter-spacing: -0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_proyect_title {
+    font-size: 6rem;
+    letter-spacing: 1rem;
+  }
+}

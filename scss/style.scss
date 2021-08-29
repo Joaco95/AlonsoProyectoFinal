@@ -1,4 +1,16 @@
-body {
-  background-color: red;
-  color: aqua;
-}
+/****GENERAL****/
+@import "var";
+@import "operations";
+@import "general";
+/*STRUCTURE */
+@import "structure/header";
+@import "structure/main";
+@import "structure/footer";
+/*TABS*/
+@import "tabs/index";
+@import "tabs/musicsessions";
+@import "tabs/studio";
+@import "tabs/proyect";
+@import "tabs/shifts";
+/*MEDIAQUERIS*/
+@import "mediaqueries";
