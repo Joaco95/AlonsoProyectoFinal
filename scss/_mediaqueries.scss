@@ -1,16 +1,28 @@
 /****MEDIA QUERIES****/
 /**STRUCTURE**/
 @media (max-width: 576px) {
-  .header_div_log {
+  .header-nav--logo {
     width: 10rem;
     height: 9rem;
   }
-  .footer_div_title {
+  .footer-div-mediaqueries {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-div--title {
     font-size: 4rem;
   }
-  .footer_div_logos {
+  .footer-div--logos {
     width: 2.5rem;
     height: 2.5rem;
+  }
+  .footer-div--div {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-div--small {
+    font-size: 1.5rem;
   }
 }
 

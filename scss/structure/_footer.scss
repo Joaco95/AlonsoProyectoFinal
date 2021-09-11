@@ -5,6 +5,9 @@
   margin-top: 2rem;
   background: #262626;
 
+  &--div {
+    width: 100%;
+  }
   &--logos {
     width: 4rem;
     height: 4rem;
@@ -15,7 +18,10 @@
   }
   &--small {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #ffffff !important;
   }
+}
+.footer-h5 {
+  color: $color_title_turnos;
 }

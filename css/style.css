@@ -68,6 +68,10 @@ main {
   background: #262626;
 }
 
+.footer-div--div {
+  width: 100%;
+}
+
 .footer-div--logos {
   width: 4rem;
   height: 4rem;
@@ -80,8 +84,12 @@ main {
 
 .footer-div--small {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #ffffff !important;
+}
+
+.footer-h5 {
+  color: #4e3edd;
 }
 
 /*TABS*/
@@ -332,16 +340,37 @@ main {
 /****MEDIA QUERIES****/
 /**STRUCTURE**/
 @media (max-width: 576px) {
-  .header_div_log {
+  .header-nav--logo {
     width: 10rem;
     height: 9rem;
   }
-  .footer_div_title {
+  .footer-div-mediaqueries {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-div--title {
     font-size: 4rem;
   }
-  .footer_div_logos {
+  .footer-div--logos {
     width: 2.5rem;
     height: 2.5rem;
+  }
+  .footer-div--div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-div--small {
+    font-size: 1.5rem;
   }
 }
 
