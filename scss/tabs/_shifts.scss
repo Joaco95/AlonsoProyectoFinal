@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 
-.main_form_primary {
+.shifts-main-form--primary {
   font-family: "Rampart One", cursive;
   display: inline;
   font-size: 12rem;
@@ -10,22 +10,22 @@
   color: $color_title_turnos;
 }
 
-.main_form {
-  &_title {
+.shifts-main-form {
+  &--title {
     font-size: 3rem;
     font-weight: 600;
   }
-  &_area {
+  &--area {
     font-size: 1.5rem;
     background-color: #74ebd5;
     background-image: radial-gradient(90deg, #74ebd5 0%, #9face6 100%);
   }
-  &_botton {
+  &--botton {
     font-size: 3rem;
     font-weight: 700;
     background-color: $color-botton;
     border-color: $color-botton;
-    &_area {
+    &-area {
       font-size: 2rem;
       font-weight: 400;
       background-color: $color-botton;

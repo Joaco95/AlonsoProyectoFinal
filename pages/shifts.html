@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProyectoFinalAlonso</title>
+    <meta name="description" content="Pestaña para solicitar turnos de grabación">
+    <meta name="keywords" content="Música,turnos">
+    <title>Turnos - Falon Record</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,17 +28,17 @@
     ></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <div class="header_div bg-dark">
-        <nav class="header_nav container navbar navbar-expand-lg navbar-dark">
+      <div class="header-div bg-dark">
+        <nav class="header-nav container navbar navbar-expand-lg navbar-dark">
           <div class="header_nav_div container-fluid">
             <img
-              class="navbar-brand header_div_log pl-5"
-              src="image/logo.png"
+              class="navbar-brand header-nav--logo pl-5"
+              src="../image/logo.png"
               alt="logo"
             />
             <button
@@ -52,31 +54,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="header_div_div navbar-nav p-5">
-                <a class="header_div_a nav-link active" aria-current="page" href="index.html"
+                <a class="header-nav--a nav-link active" aria-current="page" href="../index.html"
                   >Home</a
                 >
                 <a
-                  class="header_div_a nav-link active"
+                  class="header-nav--a nav-link active"
                   aria-current="page"
                   href="musicsessions.html"
                   >Music Sessions</a
                 >
                 <a
-                  class="header_div_a nav-link active"
+                  class="header-nav--a nav-link active"
                   aria-current="page"
                   href="studio.html"
                   >Estudio</a
                 >
                 <a
-                  class="header_div_a nav-link active"
+                  class="header-nav--a nav-link active"
                   aria-current="page"
                   href="shifts.html"
                   >Turnos</a
                 >
                 <a
-                  class="header_div_a nav-link active"
+                  class="header-nav--a nav-link active"
                   aria-current="page"
-                  href="proyect.html"
+                  href="project.html"
                   >Trabajos</a
                 >
               </div>
@@ -89,76 +91,90 @@
 
     <!-- MAIN -->
     <main>
-      <div class="container">
-        <div class="p-5 d-flex justify-content-center">
-          <h1 class="main_proyect_title">PROYECTOS</h1>
-        </div>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ZPiJnWM1Qpg"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/PIi-tckXYio"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-PxCBplk58Q"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/EUXbfIOM77E"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/oCiDpIQ-EjM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-      </div>
+      <section class="container mb-3">
+        <form class="shifts-main-form">
+          <fieldset>
+            <div class="container d-flex justify-content-center">
+              <h1 class="shifts-main-form--primary">Turnos</h1>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label shifts-main-form--title"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Nombre y Apellido"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label shifts-main-form--title"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="tel" class="form-label shifts-main-form--title"
+                >Número De Télefono</label
+              >
+              <input
+                type="number"
+                name="phonenumber"
+                class="form-control"
+                placeholder="Télefono"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Select" class="form-label shifts-main-form--title"
+                >Elegir Dia:</label
+              >
+              <select id="Select" class="form-select">
+                <option>Lunes</option>
+                <option>Martes</option>
+                <option>Miercóles</option>
+                <option>Jueves</option>
+                <option>Viernes</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                type="submit"
+                class="shifts-main-form--botton btn btn-primary m-3"
+              >
+                Enviar
+              </button>
+            </div>
+            <div class="container mt-3 p-3">
+              <div class="row">
+                <label for="textarea" class="form-label shifts-main-form--title"
+                  >Consultas:</label
+                >
+                <textarea
+                  class="shifts-main-form--area"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button
+                  type="submit"
+                  class="shifts-main-form--botton-area btn btn-primary m-3"
+                >
+                  Enviar Consulta!
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <!-- MAIN -->
 
@@ -166,7 +182,7 @@
     <footer>
       <div
         class="
-          footer_div
+          footer-div
           container-fluid
           pb-0
           mb-0
@@ -177,7 +193,7 @@
       >
         <div class="row d-flex bd-highlight my-5 py-5">
           <div class="col-6">
-            <h3 class="footer_div_title">Redes Sociales</h3>
+            <h3 class="footer-div--title">Redes Sociales</h3>
           </div>
           <div class="col-6 mt-5 align-self-center justify-content-between">
             <div class="">
@@ -187,9 +203,9 @@
                   href="https://www.instagram.com/falonrecords/?hl=es"
                 >
                   <img
-                    class="footer_div_logos"
-                    src="image/instagram.png"
-                    alt=""
+                    class="footer-div--logos"
+                    src="../image/instagram.png"
+                    alt="image instagram"
                 /></a>
               </span>
               <span class="p-3"
@@ -198,19 +214,19 @@
                   href="https://open.spotify.com/artist/33y2NncbjEmSKcY3YRhSbX"
                 >
                   <img
-                    class="footer_div_logos"
-                    src="image/spotify.png"
-                    alt="" /></a
+                    class="footer-div--logos"
+                    src="../image/spotify.png"
+                    alt="image spotify" /></a
               ></span>
               <span class="p-3"
                 ><a
                   target="_blank"
                   href="https://www.youtube.com/channel/UCKWK809iht6XaDaAO0_TZww"
-                  ><img class="footer_div_logos" src="image/youtube.png" alt=""
+                  ><img class="footer-div--logos" src="../image/youtube.png" alt="image youtube"
                 /></a>
               </span>
             </div>
-            <small class="footer_div_small">Página Creada 2021.</small>
+            <small class="footer-div--small">Página Creada 2021.</small>
           </div>
         </div>
       

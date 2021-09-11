@@ -5,8 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
-.main_section_index_title_h1 {
-  border: solid 0.2rem rgba(129, 236, 236, 0.822);
+.music-main-div {
+  -webkit-text-decoration: underline 0.3rem;
+          text-decoration: underline 0.3rem;
 }
 
 /****GENERAL****/
@@ -37,20 +38,20 @@ header {
 }
 
 .navbar-dark .navbar-toggler {
-  border-color: red;
+  border-color: #3f7fbf;
 }
 
-.header_div_log {
+.header-nav--logo {
   width: 15rem;
   height: 14rem;
 }
 
-.header_div_a {
+.header-nav--a {
   color: white !important;
   font-size: 2.5rem;
 }
 
-.header_div_a:hover {
+.header-nav--a:hover {
   color: #20cece !important;
 }
 
@@ -60,24 +61,24 @@ main {
 }
 
 /****FOOTER****/
-.footer_div {
+.footer-div {
   font-family: "Bebas Neue", cursive;
   overflow: hidden;
   margin-top: 2rem;
   background: #262626;
 }
 
-.footer_div_logos {
+.footer-div--logos {
   width: 4rem;
   height: 4rem;
 }
 
-.footer_div_title {
+.footer-div--title {
   color: #fcfcfce5 !important;
   font-size: 5rem;
 }
 
-.footer_div_small {
+.footer-div--small {
   text-align: center;
   font-size: 2rem;
   color: #ffffff !important;
@@ -85,7 +86,7 @@ main {
 
 /*TABS*/
 /*****Home******/
-.main_section_index_title_h1 {
+.index-main-section--title {
   position: relative;
   color: #7d41e6;
   font-size: 12rem;
@@ -93,7 +94,7 @@ main {
   font-weight: 700;
 }
 
-.main_section_index_title_h1::before {
+.index-main-section--title::before {
   content: "INFORMACIÓN";
   position: absolute;
   color: transparent;
@@ -106,7 +107,7 @@ main {
   transition: 2s;
 }
 
-.main_section_index_title_h1::after {
+.index-main-section--title::after {
   content: "INFORMACIÓN";
   position: absolute;
   color: transparent;
@@ -118,24 +119,24 @@ main {
   transition: 2s;
 }
 
-.main_section_index_title_h1:hover:before {
+.index-main-section--title:hover:before {
   top: 0.8rem;
   left: 0.8rem;
 }
 
-.main_section_index_title_h1:hover:after {
+.index-main-section--title:hover:after {
   top: -0.8rem;
   left: -0.8rem;
 }
 
-.main_section_p {
+.index-main-section--text {
   font-size: 2.5rem;
   line-height: 4rem;
   font-weight: 300;
 }
 
 /*****MUSIC SESSIONS*****/
-.main_div_h1 {
+.music-main-div--h1 {
   font-size: 12rem;
   text-shadow: 4px 4px 0px #3f7fbf;
   -webkit-animation: fadeIn 2.5s linear forwards;
@@ -160,7 +161,7 @@ main {
   }
 }
 
-.main_section_ms {
+.music-main-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +177,7 @@ main {
           align-items: center;
 }
 
-.main_ms_card {
+.music-main-cards {
   background-color: #fff;
   background-clip: border-box;
   border: 1.5rem solid rgba(0, 0, 0, 0.125);
@@ -189,7 +190,7 @@ main {
 }
 
 /*****STUDIO*****/
-.main_div_st_title {
+.studio-main-div--title {
   font-family: "Lobster", cursive;
   color: #80d0c7;
   position: relative;
@@ -200,7 +201,7 @@ main {
   text-shadow: 1px 1px 0 #08aeea, 1px 2px 0 #08aeea, 1px 3px 0 #08aeea, 1px 4px 0 #08aeea, 1px 5px 0 #08aeea, 1px 6px 0 #08aeea, 1px 7px 0 #08aeea, 1px 8px 0 #08aeea, 5px 13px 15px black;
 }
 
-.main_div_st_title:hover {
+.studio-main-div--title:hover {
   -webkit-transition: 3s;
   transition: 3s;
   -webkit-transform: scale(1.1) translate(0%, 30%);
@@ -208,13 +209,13 @@ main {
   text-shadow: 1px -1px 0 #08aeea, 1px -2px 0 #08aeea, 1px -3px 0 #08aeea 1px -4px 0 #08aeea, 1px -5px 0 #08aeea, 1px -6px 0 #08aeea, 1px -7px 0 #08aeea, 1px -8px 0 #08aeea, 5px -13px 15px black, 5px -13px 25px #0a87b5;
 }
 
-.main_section1_title {
+.studio-main-firstsection--title {
   font-size: 4rem;
   font-weight: 600;
   margin: 3rem;
 }
 
-.main_section1_img {
+.studio-main-firstsection--img {
   width: 100%;
   height: 100%;
   border: solid 1rem #8bc6ec;
@@ -223,7 +224,7 @@ main {
           filter: grayscale(0);
 }
 
-.main_section1_div:hover .main_section1_img {
+.studio-main-firstsection--div:hover .studio-main-firstsection--img {
   -webkit-filter: none;
           filter: none;
   -webkit-transform: scale(1.1, 1.1);
@@ -232,35 +233,35 @@ main {
   transition: 3s;
 }
 
-.main_section2 {
+.studio-main-twosection {
   border: solid 1rem #8bc6ec;
   border-radius: 3rem;
   margin: 2rem;
 }
 
-.main_section2_img {
+.studio-main-twosection--img {
   width: 100%;
   height: 100%;
 }
 
-.main_section3 {
+.studio-main-threesection {
   border: solid 1rem #8bc6ec;
   border-radius: 3rem;
   margin: 2rem;
 }
 
-.main_section3_img {
+.studio-main-threesection--img {
   width: 100%;
   height: 100%;
 }
 
-.main_section_st_p {
+.studio-text {
   font-size: 2.5rem;
   font-weight: 300;
 }
 
 /****Proyectos*****/
-.main_proyect_title {
+.project-main-title {
   position: relative;
   text-transform: lowercase;
   text-shadow: -3.5rem 3.5rem 1rem #6284ff;
@@ -276,13 +277,13 @@ main {
   transition: all 3s ease-out;
 }
 
-.main_proyect_title:hover {
+.project-main-title:hover {
   text-shadow: -0.5rem 0.5rem 1rem #ff0000;
   color: black;
 }
 
 /*****TURNOS*****/
-.main_form_primary {
+.shifts-main-form--primary {
   font-family: "Rampart One", cursive;
   display: inline;
   font-size: 12rem;
@@ -290,25 +291,25 @@ main {
   color: #4e3edd;
 }
 
-.main_form_title {
+.shifts-main-form--title {
   font-size: 3rem;
   font-weight: 600;
 }
 
-.main_form_area {
+.shifts-main-form--area {
   font-size: 1.5rem;
   background-color: #74ebd5;
   background-image: radial-gradient(90deg, #74ebd5 0%, #9face6 100%);
 }
 
-.main_form_botton {
+.shifts-main-form--botton {
   font-size: 3rem;
   font-weight: 700;
   background-color: #784ba0;
   border-color: #784ba0;
 }
 
-.main_form_botton_area {
+.shifts-main-form--botton-area {
   font-size: 2rem;
   font-weight: 400;
   background-color: #784ba0;
@@ -346,63 +347,79 @@ main {
 
 /*INDEX*/
 @media (max-width: 576px) {
-  .main_section_index_title_h1 {
-    font-size: 8rem !important;
+  .index-main-section--title {
+    font-size: 4rem !important;
   }
-  .main_section_index_title_h1 {
-    border: solid 0.5rem red;
-  }
-  .main_section_p {
+  .index-main-section--text {
     font-size: 2rem;
     font-weight: 400;
   }
 }
 
 @media (max-width: 768px) {
-  .main_section_index_title_h1 {
+  .index-main-section--title {
     font-size: 6rem;
   }
 }
 
 /*MUSICSESSIONS*/
 @media (max-width: 576px) {
-  .main_div_h1 {
-    font-size: 4rem;
+  .music-main-div--h1 {
+    font-size: 4rem !important;
   }
-  .main_ms_card {
+  .music-main-cards {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .main_ms_card {
+  .music-main-div--h1 {
+    font-size: 6rem;
+  }
+  .music-main-cards {
     width: 100%;
   }
 }
 
 /*STUIDO*/
 @media (max-width: 576px) {
-  .main_div_st_title {
-    font-size: 6rem;
+  .studio-main-div--title {
+    font-size: 4rem !important;
   }
-  .main_section1_title {
+  .studio-main-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .studio-main-firstsection--title {
     font-size: 2.5rem;
     font-weight: 700;
   }
-  .main_section1_div:hover .main_section1_img {
-    -webkit-transform: scale(2, 2);
-            transform: scale(2, 2);
+  .studio-main-firstsection--img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .studio-main-firstsection--div:hover .studio-main-firstsection--img {
+    -webkit-transform: scale(4, 4);
+            transform: scale(4, 4);
     -webkit-transition: 2s;
     transition: 2s;
   }
-  .main_section_st_p {
+  .studio-text {
     font-size: 1.5rem;
     font-weight: 400;
   }
 }
 
 @media (max-width: 768px) {
-  .main_section1_div:hover .main_section1_img {
+  .studio-main-div--title {
+    font-size: 6rem;
+  }
+  .studio-main-firstsection--div:hover .studio-main-firstsection--img {
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1);
     -webkit-transition: 2s;
@@ -412,21 +429,27 @@ main {
 
 /*SHIFTS*/
 @media (max-width: 576px) {
-  .main_form_primary {
+  .shifts-main-form--primary {
+    font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .shifts-main-form--primary {
     font-size: 6rem;
   }
 }
 
 /*PROYECTS*/
 @media (max-width: 576px) {
-  .main_proyect_title {
+  .project-main-title {
     font-size: 4rem !important;
     letter-spacing: -0.5rem !important;
   }
 }
 
 @media (max-width: 768px) {
-  .main_proyect_title {
+  .project-main-title {
     font-size: 6rem;
     letter-spacing: 1rem;
   }

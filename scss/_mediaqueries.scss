@@ -16,61 +16,70 @@
 
 /*INDEX*/
 @media (max-width: 576px) {
-  .main_section_index_title_h1 {
-    font-size: ($tamañodeletra + 4) !important;
+  .index-main-section--title {
+    font-size: ($tamanodeletra) !important;
   }
-  @if $tamañodeletra==4rem {
-    .main_section_index_title_h1 {
-      border: solid 0.5rem red;
-    }
-  }
-  .main_section_p {
+  .index-main-section--text {
     font-size: 2rem;
     font-weight: 400;
   }
 }
 @media (max-width: 768px) {
-  .main_section_index_title_h1 {
+  .index-main-section--title {
     font-size: 6rem;
   }
 }
 
 /*MUSICSESSIONS*/
 @media (max-width: 576px) {
-  .main_div_h1 {
-    font-size: 4rem;
+  .music-main-div--h1 {
+    font-size: 4rem !important;
   }
-  .main_ms_card {
+  .music-main-cards {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .main_ms_card {
+  .music-main-div--h1 {
+    font-size: 6rem;
+  }
+  .music-main-cards {
     width: 100%;
   }
 }
 
 /*STUIDO*/
 @media (max-width: 576px) {
-  .main_div_st_title {
-    font-size: 6rem;
+  .studio-main-div--title {
+    font-size: 4rem !important;
   }
-  .main_section1_title {
+  .studio-main-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .studio-main-firstsection--title {
     font-size: 2.5rem;
     font-weight: 700;
   }
-  .main_section1_div:hover .main_section1_img {
-    transform: scale(2, 2);
+  .studio-main-firstsection--img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .studio-main-firstsection--div:hover .studio-main-firstsection--img {
+    transform: scale(4, 4);
     transition: 2s;
   }
-  .main_section_st_p {
+  .studio-text {
     font-size: 1.5rem;
     font-weight: 400;
   }
 }
 
 @media (max-width: 768px) {
-  .main_section1_div:hover .main_section1_img {
+  .studio-main-div--title {
+    font-size: 6rem;
+  }
+  .studio-main-firstsection--div:hover .studio-main-firstsection--img {
     transform: scale(1.1, 1.1);
     transition: 2s;
   }
@@ -78,20 +87,26 @@
 
 /*SHIFTS*/
 @media (max-width: 576px) {
-  .main_form_primary {
+  .shifts-main-form--primary {
+    font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .shifts-main-form--primary {
     font-size: 6rem;
   }
 }
 
 /*PROYECTS*/
 @media (max-width: 576px) {
-  .main_proyect_title {
+  .project-main-title {
     font-size: 4rem !important;
     letter-spacing: -0.5rem !important;
   }
 }
 @media (max-width: 768px) {
-  .main_proyect_title {
+  .project-main-title {
     font-size: 6rem;
     letter-spacing: 1rem;
   }

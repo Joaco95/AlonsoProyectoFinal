@@ -1,6 +1,6 @@
 /*****MUSIC SESSIONS*****/
-.main_div {
-  &_h1 {
+.music-main-div {
+  &--h1 {
     font-size: 12rem;
     text-shadow: 4px 4px 0px #3f7fbf;
     animation: fadeIn 2.5s linear forwards;
@@ -16,14 +16,14 @@
     }
   }
 }
-.main_section_ms {
+.music-main-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.main_ms_card {
+.music-main-cards {
   background-color: #fff;
   background-clip: border-box;
   border: 1.5rem solid rgba(0, 0, 0, 0.125);

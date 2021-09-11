@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 
-.main_proyect_title {
+.project-main-title {
   position: relative;
   text-transform: lowercase;
   text-shadow: -3.5rem 3.5rem 1rem #6284ff;
@@ -13,7 +13,7 @@
   font-size: 12rem;
   transition: all 3s ease-out;
 }
-.main_proyect_title:hover {
+.project-main-title:hover {
   text-shadow: -0.5rem 0.5rem 1rem #ff0000;
   color: black;
 }

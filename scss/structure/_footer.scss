@@ -1,24 +1,21 @@
 /****FOOTER****/
-.footer_div {
+.footer-div {
   font-family: "Bebas Neue", cursive;
   overflow: hidden;
   margin-top: 2rem;
   background: #262626;
 
-  &_logos {
+  &--logos {
     width: 4rem;
     height: 4rem;
   }
-  &_title {
+  &--title {
     color: #fcfcfce5 !important;
     font-size: 5rem;
   }
-  &_small {
+  &--small {
     text-align: center;
-    font-size: 2rem
-      /*
-      10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))
-    ) !important;*/;
+    font-size: 2rem;
     color: #ffffff !important;
   }
 }

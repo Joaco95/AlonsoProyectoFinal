@@ -1,16 +1,14 @@
 /*****Home******/
-.main_section {
-  &_index_title {
-    &_h1 {
-      position: relative;
-      color: #7d41e6;
-      font-size: 12rem;
-      letter-spacing: 0.5rem;
-      font-weight: 700;
-    }
+.index-main-section {
+  &--title {
+    position: relative;
+    color: $color-index-title;
+    font-size: 12rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
   }
 
-  &_index_title_h1::before {
+  &--title::before {
     content: "INFORMACIÓN";
     position: absolute;
     color: transparent;
@@ -18,8 +16,8 @@
       45deg,
       transparent 0,
       transparent 2px,
-      #fe05e1 4px,
-      #fe05e1 8px
+      $color-index-title2 4px,
+      $color-index-title2 8px
     );
     -webkit-background-clip: text;
     top: 0;
@@ -28,7 +26,7 @@
     transition: 2s;
   }
 
-  &_index_title_h1::after {
+  &--title::after {
     content: "INFORMACIÓN";
     position: absolute;
     color: transparent;
@@ -36,8 +34,8 @@
       135deg,
       transparent 0,
       transparent 2px,
-      #fe05e1 4px,
-      #fe05e1 8px
+      $color-index-title2 4px,
+      $color-index-title2 8px
     );
     -webkit-background-clip: text;
     top: 0px;
@@ -45,17 +43,17 @@
     transition: 2s;
   }
 
-  &_index_title_h1:hover:before {
+  &--title:hover:before {
     top: 0.8rem;
     left: 0.8rem;
   }
 
-  &_index_title_h1:hover:after {
+  &--title:hover:after {
     top: -0.8rem;
     left: -0.8rem;
   }
 
-  &_p {
+  &--text {
     font-size: 2.5rem;
     line-height: 4rem;
     font-weight: 300;
