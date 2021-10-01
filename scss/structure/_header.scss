@@ -2,6 +2,10 @@
 header {
   font-family: "Bebas Neue", cursive;
 }
+.header-image {
+  height: 100%;
+  width: 100%;
+}
 .navbar-toggler-icon {
   width: 3rem;
   height: 3rem;
@@ -15,6 +19,10 @@ header {
   &--logo {
     width: 15rem;
     height: 14rem;
+  }
+  &--div {
+    gap: 17rem;
+    padding: 0.5rem !important;
   }
   &--a {
     color: rgb(255, 255, 255) !important;

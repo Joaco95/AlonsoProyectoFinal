@@ -6,8 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 .music-main-div {
-  -webkit-text-decoration: underline 0.3rem;
-          text-decoration: underline 0.3rem;
+  -webkit-text-decoration: underline 0.2rem;
+          text-decoration: underline 0.2rem;
 }
 
 /****GENERAL****/
@@ -32,6 +32,11 @@ header {
   font-family: "Bebas Neue", cursive;
 }
 
+.header-image {
+  height: 100%;
+  width: 100%;
+}
+
 .navbar-toggler-icon {
   width: 3rem;
   height: 3rem;
@@ -44,6 +49,11 @@ header {
 .header-nav--logo {
   width: 15rem;
   height: 14rem;
+}
+
+.header-nav--div {
+  gap: 17rem;
+  padding: 0.5rem !important;
 }
 
 .header-nav--a {
@@ -90,6 +100,10 @@ main {
 
 .footer-h5 {
   color: #4e3edd;
+}
+
+h5 {
+  font-size: 2rem !important;
 }
 
 /*TABS*/
@@ -141,6 +155,11 @@ main {
   font-size: 2.5rem;
   line-height: 4rem;
   font-weight: 300;
+}
+
+.index-main-section--img {
+  height: 74rem;
+  width: 54rem;
 }
 
 /*****MUSIC SESSIONS*****/
@@ -268,6 +287,12 @@ main {
   font-weight: 300;
 }
 
+.arrow {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+}
+
 /****Proyectos*****/
 .project-main-title {
   position: relative;
@@ -340,10 +365,6 @@ main {
 /****MEDIA QUERIES****/
 /**STRUCTURE**/
 @media (max-width: 576px) {
-  .header-nav--logo {
-    width: 10rem;
-    height: 9rem;
-  }
   .footer-div-mediaqueries {
     width: 100%;
     display: -webkit-box;
@@ -372,6 +393,54 @@ main {
   .footer-div--small {
     font-size: 1.5rem;
   }
+  h5 {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav--div {
+    gap: 1.5rem !important;
+    padding-top: 3rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-nav--div {
+    gap: 12rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header-nav--div {
+    gap: 21rem;
+  }
+  .header-nav--a {
+    font-size: 3.5rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .footer-div--title {
+    font-size: 7rem;
+  }
+  .footer-div--logos {
+    width: 6rem;
+    height: 6rem;
+  }
+  h5 {
+    font-size: 3rem !important;
+  }
+  .footer-div--small {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .header-nav--a {
+    font-size: 4.3rem;
+  }
 }
 
 /*INDEX*/
@@ -388,6 +457,43 @@ main {
 @media (max-width: 768px) {
   .index-main-section--title {
     font-size: 6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .index-main-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index-main-section--text {
+    width: 100%;
+  }
+  .index-main-section--img {
+    height: 40rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .index-main-section--text {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+  }
+  .index-main-section--img {
+    height: 100rem;
+    width: 60rem;
+  }
+  .index-main-section--title {
+    font-size: 20rem;
   }
 }
 
@@ -410,10 +516,25 @@ main {
   }
 }
 
+@media (min-width: 1400px) {
+  .music-main-div--h1 {
+    font-size: 20rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .card-title {
+    font-size: 3rem;
+  }
+  .music-video {
+    width: 200rem !important;
+  }
+}
+
 /*STUIDO*/
 @media (max-width: 576px) {
   .studio-main-div--title {
-    font-size: 4rem !important;
+    font-size: 6rem !important;
   }
   .studio-main-row {
     display: -webkit-box;
@@ -446,13 +567,26 @@ main {
 
 @media (max-width: 768px) {
   .studio-main-div--title {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .studio-main-firstsection--div:hover .studio-main-firstsection--img {
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1);
     -webkit-transition: 2s;
     transition: 2s;
+  }
+}
+
+@media (min-width: 1400px) {
+  .studio-main-div--title {
+    font-size: 20rem;
+  }
+  .studio-main-firstsection--title {
+    font-size: 6rem;
+  }
+  .studio-text {
+    font-size: 3.5rem;
+    font-weight: 500;
   }
 }
 
@@ -469,11 +603,39 @@ main {
   }
 }
 
+@media (min-width: 1400px) {
+  .shifts-main-form--primary {
+    font-size: 20rem;
+  }
+  .shifts-main-form--title {
+    font-size: 8rem;
+  }
+  .form-control {
+    font-size: 4rem;
+    height: 10rem;
+    border: 0.75rem solid #ced4da;
+  }
+  .form-select {
+    font-size: 4rem;
+    height: 8rem;
+    border: 0.75rem solid #08aeea;
+  }
+  .shifts-main-form--botton {
+    font-size: 6rem;
+  }
+  .shifts-main-form--botton-area {
+    font-size: 4rem;
+  }
+  .shifts-main-form--area {
+    font-size: 4rem;
+  }
+}
+
 /*PROYECTS*/
 @media (max-width: 576px) {
   .project-main-title {
     font-size: 4rem !important;
-    letter-spacing: -0.5rem !important;
+    letter-spacing: -0.4rem !important;
   }
 }
 
@@ -481,5 +643,38 @@ main {
   .project-main-title {
     font-size: 6rem;
     letter-spacing: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .project-main-title {
+    font-size: 18rem;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: 2560px) {
+  .project-main-title {
+    font-size: 20rem;
+    letter-spacing: 1rem;
+  }
+  .project-videos {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ratio {
+    width: 200rem !important;
   }
 }

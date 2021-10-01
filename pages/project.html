@@ -8,7 +8,7 @@
       name="description"
       content="Proyecto en los que ha trabajo el productor"
     />
-    <meta name="keywords" content="Música,videos,proyectos" />
+    <meta name="keywords" content="Música,videos,proyectos,Argentina,Neuquén" />
     <title>Proyectos - Falon Record</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,14 +36,16 @@
   <body>
     <!-- HEADER -->
     <header>
+      <div>
+        <img
+          class="header-image"
+          src="../image/imageheader.jpg"
+          alt="image-header"
+        />
+      </div>
       <div class="header-div bg-dark">
         <nav class="header-nav container navbar navbar-expand-lg navbar-dark">
-          <div class="header_nav_div container-fluid">
-            <img
-              class="navbar-brand header-nav--logo pl-5"
-              src="../image/logo.png"
-              alt="logo"
-            />
+          <div class="header-nav-div container-fluid">
             <button
               class="navbar-toggler"
               type="button"
@@ -56,7 +58,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="header_div_div navbar-nav p-5">
+              <div class="container header-nav--div navbar-nav p-5">
                 <a
                   class="header-nav--a nav-link active"
                   aria-current="page"
@@ -85,7 +87,7 @@
                   class="header-nav--a nav-link active"
                   aria-current="page"
                   href="project.html"
-                  >Trabajos</a
+                  >Proyectos</a
                 >
               </div>
             </div>
@@ -98,74 +100,77 @@
     <!-- MAIN -->
     <main>
       <div class="container">
-        <div class="p-5 d-flex justify-content-center">
+        <div class="pb-3 p-5 d-flex justify-content-center">
           <h1 class="project-main-title">PROYECTOS</h1>
         </div>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ZPiJnWM1Qpg"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/PIi-tckXYio"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-PxCBplk58Q"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/EUXbfIOM77E"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="m-5">
-          <div class="d-block w-100 ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/oCiDpIQ-EjM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
+        <div class="container project-videos p-5">
+          <section class="m-5">
+            <div class="project-main-video d-block w-100 ratio ratio-16x9">
+              <iframe
+                class=""
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ZPiJnWM1Qpg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section class="m-5">
+            <div class="d-block project-main-video w-100 ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/PIi-tckXYio"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section class="m-5">
+            <div class="d-block project-main-video w-100 ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-PxCBplk58Q"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section class="m-5">
+            <div class="d-block project-main-video w-100 ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/EUXbfIOM77E"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+          <section class="m-5">
+            <div class="d-block project-main-video w-100 ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/oCiDpIQ-EjM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <!-- MAIN -->
